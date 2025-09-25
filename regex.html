@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" id="reg">
+    <input type="text" id="email"> -->
+    <input type="text" id="password">
+    <button onclick="regeX()">Click Me!!</button>
+
+    <script>
+        const regeX = () => {
+            // const regex = /^([A-Z])([a-z]){1,}$/;
+            // const eMail = /^(\w){1,}(@)(\w){1,}(\.)(\w){1,}$/;
+            const Password = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,}$/;
+
+            // const tezt = regex.test(reg.value)
+            // const testEmail = eMail.test(email.value)
+            const isPassword = Password.test(password.value)
+            if (isPassword){
+                console.log("Pass")
+            }
+            else{
+                console.log("Invalid");
+            }
+        }
+    </script>
+</body>
+</html>
