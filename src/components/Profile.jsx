@@ -55,7 +55,7 @@ const Profile = () => {
 
 
         // Save user to backend
-        axios.post("http://localhost:2846/user/signup", user)
+        axios.post("https://node-class-lxo9.onrender.com/user/signup", user)
             .then((res) => {
                 console.log("Response:", res.data);
                 alert("Signup successful! Please login.");

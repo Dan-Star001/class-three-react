@@ -23,7 +23,7 @@ const Signup = () => {
                 setAllUsers([...allUsers, newUser]);
                 navigate("/signin");
             })
-            .catch((err) => {
+        .catch((err) => {
                 console.error("Error:", err.response ? err.response.data : err);
                 alert("Signup failed, try again.");
             });
