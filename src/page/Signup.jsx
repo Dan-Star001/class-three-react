@@ -14,7 +14,7 @@ const Signup = () => {
         let newUser = { firstName, lastName, email, password, profilePicture }
 
         // Save user to backend
-        axios.post("http://localhost:2846/user/signup", newUser)
+        axios.post("https://node-class-lxo9.onrender.com/user/signup", newUser)
             .then((res) => {
                 console.log("Response:", res.data);
                 alert("Signup successful! Please login.");

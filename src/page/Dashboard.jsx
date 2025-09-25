@@ -15,7 +15,7 @@ const Dashboard = () => {
         getDashboard()
     }, [])
     let token = localStorage.token
-    let url = "http://localhost:2846/user/dashboard"
+    let url = "https://node-class-lxo9.onrender.com/user/dashboard"
     const getDashboard = ()=>{
         axios.get(url,{
             headers:{
