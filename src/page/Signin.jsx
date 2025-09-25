@@ -17,7 +17,7 @@ const Signin = () => {
                     alert("Welcome back!");
                     localStorage.token = res.data.user.token
                     // Redirect only when confirmed
-                    navigate("/Dashboard");
+                    navigate("/dashboard");
                 } else {
                     alert(res.data.message || "Invalid credentials");
                 }
